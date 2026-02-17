@@ -11,7 +11,7 @@
 body { background:var(--dark); color:var(--silver); }
 
 .main-header {
-    background: url("assets/sbj-header-texture.jpg");
+    background: url("sbj-header-texture.jpg");
     background-size: cover;
     background-position: center;
 
