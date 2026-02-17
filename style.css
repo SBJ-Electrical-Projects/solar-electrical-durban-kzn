@@ -128,42 +128,6 @@ nav a:hover { color:var(--gold); }
     transform: scale(1.03);
 }
 
-/* Contact Page Only */
-.contact-section {
-    text-align: center;
-    padding: 80px 10%;
-}
-
-.contact-subtext {
-    margin-bottom: 25px;
-    color: #aaa;
-}
-
-.contact-center {
-    margin: 20px auto;
-    max-width: 600px;
-}
-
-.contact-info {
-    margin: 4px 0; /* Reduced space between number & email */
-    font-size: 18px;
-}
-
-.contact-info a {
-    color: #d4af37; /* Gold */
-    text-decoration: none;
-    transition: 0.3s ease;
-}
-
-.contact-info a:hover {
-    color: #ffffff;
-}
-
-.contact-center .btn {
-    display: inline-block;
-    margin-top: 18px;
-}
-
 footer {
     background:var(--charcoal);
     padding:20px; text-align:center;
