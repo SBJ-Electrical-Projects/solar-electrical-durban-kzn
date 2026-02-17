@@ -51,24 +51,31 @@ body { background:var(--dark); color:var(--silver); }
 /* ================= MOBILE ================= */
 
 @media (max-width: 900px) {
+@media (max-width: 900px) {
 
     .menu-toggle {
         display: block;
+        position: absolute;
+        right: 8%;
+        z-index: 3000;
     }
 
     .main-nav {
         position: absolute;
         top: 100%;
         right: 0;
-        background: #111;
+        width: 100%;
+        background: rgba(0,0,0,0.95);
         flex-direction: column;
-        width: 220px;
-        padding: 20px;
+        align-items: center;
+        padding: 25px 0;
         display: none;
+        z-index: 2500;
     }
 
     .main-nav a {
-        padding: 10px 0;
+        padding: 12px 0;
+        font-size: 18px;
     }
 
     .main-nav.active {
