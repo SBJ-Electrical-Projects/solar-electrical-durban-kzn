@@ -70,6 +70,7 @@ nav a:hover { color:var(--gold); }
 
 .page-section img {
     width:100%; border-radius:12px; margin:30px 0;
+    margin-bottom: 30px;
 }
 
 footer {
