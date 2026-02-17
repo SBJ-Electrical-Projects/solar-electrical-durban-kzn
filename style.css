@@ -11,13 +11,13 @@
 body { background:var(--dark); color:var(--silver); }
 
 header {
-    display:flex; justify-content:space-between; align-items:center;
-    padding:15px 8%; background:var(--charcoal);
-    position:sticky; top:0; z-index:1000;
-    border-bottom:1px solid var(--gold);
+    background: url("assets/header-texture.jpg");
+    background-size: cover;
+    background-position: center;
+    border-bottom: 2px solid #d4af37; /* gold line */
 }
 
-.logo img { height:55px; }
+.logo img { height:65px; }
 
 nav a {
     margin-left:25px; text-decoration:none;
