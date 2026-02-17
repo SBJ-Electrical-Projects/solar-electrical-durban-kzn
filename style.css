@@ -17,11 +17,18 @@ body { background:var(--dark); color:var(--silver); }
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;   /* center everything */
 
     padding: 15px 8%;
-    border-bottom: 2px solid #d4af37;
+    border-bottom: 2px solid var(--gold);
     position: relative;
+}
+
+.main-nav {
+    position: absolute;
+    right: 8%;
+    display: flex;
+    gap: 28px;
 }
 
 .logo img {
