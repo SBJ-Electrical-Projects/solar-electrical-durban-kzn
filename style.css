@@ -111,6 +111,23 @@ nav a:hover { color:var(--gold); }
     cursor: pointer;
 }
 
+.services-collage {
+    text-align: center;
+    padding: 60px 10%;
+}
+
+.services-collage img {
+    width: 100%;
+    max-width: 750px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    transition: transform 0.4s ease;
+}
+
+.services-collage img:hover {
+    transform: scale(1.03);
+}
+
 footer {
     background:var(--charcoal);
     padding:20px; text-align:center;
