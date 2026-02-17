@@ -75,6 +75,11 @@ nav a:hover { color:var(--gold); }
     margin-bottom: 30px;
 }
 
+.page-section p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
 footer {
     background:var(--charcoal);
     padding:20px; text-align:center;
