@@ -81,61 +81,25 @@ body {
 }
 
 /* ================= MOBILE ================= */
-
 @media (max-width: 900px) {
 
-    .menu-toggle {
-        display:flex;
-        position:absolute;
-        right:8%;
-        z-index:3000;
-    }
-
     .main-nav {
-        position:absolute;
-        top:100%;
-        left:0;
-        width:100%;
-        background:rgba(0,0,0,0.97);
-        flex-direction:column;
-        align-items:center;
-        padding:35px 0;
-        display:none;
-        gap:20px;
+        position: fixed;        /* 🔥 change from absolute */
+        top: 100px;             /* match header height */
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 100px);
+        background: rgba(0,0,0,0.98);
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+
+        display: none;
+        z-index: 5000;          /* 🔥 higher than everything */
     }
 
-    .main-nav.active {
-        display:flex;
-    }
-
-    .main-nav a {
-        width:85%;
-        text-align:center;
-        padding:14px 0;
-        border-radius:35px;
-
-        background:linear-gradient(
-            145deg,
-            var(--chrome-light),
-            var(--chrome-mid),
-            var(--chrome-dark)
-        );
-
-        color:#000;
-        font-weight:bold;
-        text-decoration:none;
-        transition:all 0.4s ease;
-    }
-
-    .main-nav a:hover {
-        background:linear-gradient(
-            145deg,
-            var(--accent),
-            var(--accent-dark)
-        );
-        transform:scale(1.08);
-        box-shadow:0 0 20px rgba(184,167,106,0.6);
-    }
 }
 
 /* ================= HERO ================= */
