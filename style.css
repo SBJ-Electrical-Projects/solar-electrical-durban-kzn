@@ -77,11 +77,8 @@ nav a:hover { color:var(--gold); }
 
 .page-section p {
     margin-bottom: 20px;
+    margin-top: 35px;
     line-height: 1.6;
-}
-
-.home-subtext {
-    margin-top: 25px;
 }
 
 footer {
