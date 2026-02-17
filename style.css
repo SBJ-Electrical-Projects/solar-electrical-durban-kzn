@@ -80,6 +80,10 @@ nav a:hover { color:var(--gold); }
     line-height: 1.6;
 }
 
+.home-subtext {
+    margin-top: 25px;
+}
+
 footer {
     background:var(--charcoal);
     padding:20px; text-align:center;
