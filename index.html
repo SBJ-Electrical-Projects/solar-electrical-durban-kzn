@@ -35,15 +35,46 @@
 <section class="services">
 <h2>Our Core Services</h2>
 <div class="grid">
-<div class="card"><h3>Solar Energy & Backup Systems</h3></div>
-<div class="card"><h3>CCTV & Electric Fencing</h3></div>
-<div class="card"><h3>Electrical Installations & COC</h3></div>
-<div class="card"><h3>Air Conditioning Services</h3></div>
-<div class="card"><h3>Smart Automation Systems</h3></div>
-<div class="card"><h3>Surge Protection Solutions</h3></div>
-</div>
+<div class="card" onclick="openModal(this)" data-image="solar-popup.jpg">
+    <h3>Solar Energy & Backup Systems</h3></div>
+<div class="card" onclick="openModal(this)" data-image="security-popup.jpg">
+    <h3>CCTV & Electric Fencing</h3></div>
+<div class="card" onclick="openModal(this)" data-image="electrical-popup.jpg">
+    <h3>Electrical Installations & COC</h3></div>
+<div class="card" onclick="openModal(this)" data-image="aircon-popup.jpg">
+    <h3>Air Conditioning Services</h3></div>
+<div class="card" onclick="openModal(this)" data-image="automation-popup.jpg">
+    <h3>Smart Automation Systems</h3></div>
+<div class="card" onclick="openModal(this)" data-image="surge-popup.jpg">
+    <h3>Surge Protection Solutions</h3></div>
+</div>  
 </section>
 
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
+
+<script>
+function openModal(card) {
+    var modal = document.getElementById("imageModal");
+    var modalImg = document.getElementById("modalImg");
+
+    modalImg.src = card.getAttribute("data-image");
+    modal.style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+}
+
+window.onclick = function(event) {
+    var modal = document.getElementById("imageModal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 
 <footer>
 SBJ Electrical Projects |
