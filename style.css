@@ -32,9 +32,14 @@ body { background:var(--dark); color:var(--silver); }
 .main-nav {
     display: flex;
     align-items: center;
-    margin-left: auto; /* THIS pushes nav to the right */
+    margin-left: auto;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
+.main-nav::-webkit-scrollbar {
+    display: none; /* hides scroll bar */
+}
 /* Nav Links */
 .main-nav a {
     margin-left: 28px;
