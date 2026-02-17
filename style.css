@@ -241,3 +241,47 @@ body {
 .services-collage img {
     width:100%;
     max-width:750px;
+    border-radius:16px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.6);
+    transition:transform 0.4s ease;
+}
+
+.services-collage img:hover {
+    transform:scale(1.03);
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    background:var(--charcoal);
+    padding:20px;
+    text-align:center;
+    border-top:1px solid var(--gold);
+}
+
+footer a {
+    color:var(--silver);
+    text-decoration:none;
+    transition:0.3s;
+}
+
+footer a:hover {
+    color:var(--gold);
+}
+
+/* ================= FORM ================= */
+
+form {
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    max-width:500px;
+}
+
+input, textarea {
+    padding:10px;
+    border-radius:5px;
+    border:1px solid #444;
+    background:#222;
+    color:var(--silver);
+    }
