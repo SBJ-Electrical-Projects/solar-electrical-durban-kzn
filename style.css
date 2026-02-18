@@ -80,24 +80,6 @@ body {
     .main-nav.active {
         display:flex;
     }
-
-    /* 🔥 MOBILE BUTTON STYLE */
-    .main-nav a {
-        width:80%;
-        text-align:center;
-        padding:14px 0;
-        border-radius:30px;
-        background:linear-gradient(45deg,var(--gold),#f5d76e);
-        color:#000;
-        font-weight:bold;
-        text-decoration:none;
-        transition:0.3s ease;
-    }
-
-    .main-nav a:hover {
-        transform:scale(1.05);
-        box-shadow:0 0 15px var(--gold);
-    }
 }
 
 /* ================= HERO ================= */
