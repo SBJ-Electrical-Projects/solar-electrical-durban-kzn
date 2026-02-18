@@ -55,7 +55,7 @@ body {
 
 /* ================= MOBILE ================= */
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
 
     .menu-toggle {
         display:block;
