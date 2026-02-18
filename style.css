@@ -142,7 +142,7 @@ body {
 
 .hero {
     text-align:center;
-    padding:100px 10%;
+    padding:120px 10%;
 }
 
 .hero h1 {
@@ -168,7 +168,7 @@ body {
 /* ================= DYNAMIC CHROME BUTTON ================= */
 
 .btn {
-    padding:14px 36px;
+    padding:16px 40px;
     border-radius:45px;
     font-weight:bold;
     text-decoration:none;
