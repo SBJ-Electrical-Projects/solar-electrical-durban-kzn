@@ -136,22 +136,52 @@ body {
 
 /* ================= BUTTON ================= */
 
+/* ================= DYNAMIC CHROME BUTTON ================= */
+
 .btn {
-    padding:14px 36px;
-    background:var(--accent);
-    color:#111;
-    text-decoration:none;
-    font-weight:bold;
-    border-radius:30px;
-    display:inline-block;
-    margin-top:20px;
-    margin-bottom:35px;
-    transition:0.3s ease;
+    padding: 14px 36px;
+    border-radius: 45px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 0.5px;
+    border: none;
+
+    /* Stronger chrome contrast */
+    background: linear-gradient(
+        120deg,
+        #ffffff 0%,
+        #e6e6e6 15%,
+        #bdbdbd 30%,
+        #f5f5f5 45%,
+        #ffffff 55%,
+        #d8c78a 70%,
+        #b8a76a 85%,
+        #ffffff 100%
+    );
+
+    background-size: 400% 400%;
+    animation: chromeFlow 4s linear infinite;
+
+    color: #111;
+    transition: all 0.3s ease;
 }
 
+/* Faster, more visible movement */
+@keyframes chromeFlow {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* Stronger glow on hover */
 .btn:hover {
-    transform:scale(1.05);
-    box-shadow:0 0 15px rgba(200,190,150,0.4);
+    transform: scale(1.08);
+    box-shadow:
+        0 0 10px rgba(255,255,255,0.6),
+        0 0 25px rgba(184,167,106,0.7),
+        0 0 45px rgba(184,167,106,0.5);
 }
 
 /* ================= SERVICES ================= */
