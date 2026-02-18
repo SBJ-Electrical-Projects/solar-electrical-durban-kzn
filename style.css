@@ -73,6 +73,23 @@ body {
 }
 
 /* Hide nav by default */
+.main-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.97);
+    backdrop-filter: blur(6px);
+
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+
+    display: none;
+    gap: 22px;
+    z-index: 2500;
+}
 
 /* Show when active */
 .main-nav.active {
