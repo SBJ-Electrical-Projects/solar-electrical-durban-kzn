@@ -27,6 +27,18 @@ body {
 /* ================= HEADER ================= */
 
 .main-header {
+    background: url("sbj-header-texture.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px 8%;
+    border-bottom: 2px solid var(--accent);
+    position: relative;
+}
 .main-nav {
     position:absolute;
     top:100%;
