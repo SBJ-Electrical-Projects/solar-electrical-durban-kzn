@@ -40,7 +40,7 @@ body {
     position: relative;
 }
 .main-nav {
-    position:absolute;
+    position:relative;
     top:100%;
     left:0;
     width:100%;
@@ -64,7 +64,7 @@ body {
 
 /* Always show hamburger */
 .menu-toggle {
-    position: absolute;
+    position: relative;
     right: 8%;
     font-size: 30px;
     color: var(--accent);
