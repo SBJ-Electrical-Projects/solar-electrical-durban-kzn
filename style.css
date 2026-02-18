@@ -261,7 +261,18 @@ body {
     font-weight:bold;
     cursor:pointer;
 }
+.map-container {
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+}
 
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
 /* ================= COLLAGE ================= */
 
 .services-collage {
