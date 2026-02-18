@@ -125,6 +125,8 @@ body {
     overflow: hidden;
     letter-spacing: 0.5px;
     border: none;
+    margin-top: 25px;
+    margin-bottom: 25x;
 
     /* Stronger chrome contrast */
     background: linear-gradient(
