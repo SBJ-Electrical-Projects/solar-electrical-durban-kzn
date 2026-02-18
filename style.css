@@ -31,83 +31,89 @@ body {
     background-size: cover;
     background-position: center;
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    padding:15px 8%;
-    border-bottom:2px solid var(--accent);
-    position:relative;
+    padding: 15px 8%;
+    border-bottom: 2px solid var(--accent);
+    position: relative;
 }
 
+/* Logo Centered */
 .logo img {
-    height:65px;
+    height: 75px;
 }
 
-.main-nav {
-    position:absolute;
-    right:8%;
-    display:flex;
-    gap:28px;
-}
-
-.main-nav a {
-    text-decoration:none;
-    color:var(--silver);
-    font-weight:500;
-    transition:0.3s ease;
-}
-
-.main-nav a:hover {
-    color:var(--accent);
-}
-
-/* Hide hamburger on desktop */
+/* Always show hamburger */
 .menu-toggle {
-    display:none;
-    font-size:28px;
-    color:var(--accent);
-    cursor:pointer;
+    position: absolute;
+    right: 8%;
+    font-size: 30px;
+    color: var(--accent);
+    cursor: pointer;
+    z-index: 3000;
 }
 
-/* ================= MOBILE ================= */
+/* Hide nav by default */
+.main-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
 
-@media (max-width: 1024px) {
+    background: rgba(0, 0, 0, 0.97);
+    backdrop-filter: blur(6px);
 
-    .menu-toggle {
-        display:block;
-        position:absolute;
-        right:8%;
-        z-index:3000;
-    }
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
 
-    .main-nav {
-        position:absolute;
-        top:100%;
-        left:0;
-        width:100%;
-        background:rgba(0,0,0,0.97);
-        flex-direction:column;
-        align-items:center;
-        padding:25px 0;
-        display:none;
-        gap:18px;
-        z-index:2000;
-    }
+    display: none;
+    gap: 22px;
+    z-index: 2500;
+}
 
-    .main-nav.active {
-        display:flex;
-    }
+/* Show when active */
+.main-nav.active {
+    display: flex;
+}
 
-    .main-nav a {
-        width:85%;
-        text-align:center;
-        padding:12px 0;
-        border-radius:30px;
-        background:var(--accent);
-        color:#111;
-        font-weight:bold;
-    }
+/* Chrome metallic buttons */
+.main-nav a {
+    width: 85%;
+    text-align: center;
+    padding: 16px 0;
+    border-radius: 40px;
+
+    background: linear-gradient(
+        145deg,
+        #f4f4f4,
+        #dcdcdc,
+        #c7c7c7,
+        #e6e6e6
+    );
+
+    color: #111;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: all 0.4s ease;
+}
+
+/* Hover glow */
+.main-nav a:hover {
+    background: linear-gradient(
+        145deg,
+        #e6e6e6,
+        #d6c99f,
+        #b8a76a,
+        #e6e6e6
+    );
+    transform: scale(1.07);
+    box-shadow:
+        0 0 15px rgba(184,167,106,0.6),
+        0 0 35px rgba(184,167,106,0.3);
 }
 
 /* ================= HERO ================= */
