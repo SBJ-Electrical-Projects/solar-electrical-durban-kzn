@@ -80,19 +80,29 @@ body {
 }
 
 .main-nav a {
-    padding: 8px 18px;
-    border-radius: 25px;
+    width: 85%;
+    text-align: center;
+    padding: 14px 0;
+    border-radius: 35px;
+
+    background: linear-gradient(
+        145deg,
+        #f5f5f5,
+        #d9d9d9,
+        #bdbdbd,
+        #f0f0f0
+    );
+
+    color: #111;
+    font-weight: bold;
     text-decoration: none;
-    color: var(--silver);
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .main-nav a:hover {
-    background: rgba(255,255,255,0.08);
-    backdrop-filter: blur(6px);
-    color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(184,167,106,0.5);
 }
-
 /* ================= HERO ================= */
 
 .hero {
